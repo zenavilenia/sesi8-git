@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sesi 8</title>
+</head>
+<body>
+    <h1>Hello World</h1>
+
+    <div id="welcomeMessage"></div>
+
+    <p>Masukan message:</p> <input type="text" id="message">
+
+    <button id="btnOk" onclick="saveMessage()">Ok</button>
+
+    <script>
+        var inputMessage = document.getElementById("message")
+        var welcomeMessage = document.getElementById("welcomeMessage")
+
+        function saveMessage() {
+            welcomeMessage.innerHTML = inputMessage.value;
+        }
+
+
+        // var score = prompt("Masukan angka 1 - 100");
+
+        // if (!(score >= 0 && score <= 100)) {
+        //     alert("cannot calculate your grade")
+        // } else if (score >= 80) {
+        //     alert("your grade is A")
+        // } else if (score >= 60 && score < 80) {
+        //     alert("your grade is B")
+        // } else if (score > 40 && score < 60) {
+        //     alert("your grade is C")
+        // } else {
+        //     alert("your grade is D")
+        // }
+    </script>
+</body>
+</html>
